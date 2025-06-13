@@ -9,3 +9,8 @@ if [ ! -d "$DATA_DIR" ]; then
 fi
 
 docker run --rm -v $(pwd)/$DATA_DIR:/data taxi-rides-outlier-detection /data $DATE
+
+
+#docker run -v ./work:/contdata taxi-rides-outlier-detection /contdata 2025-01-01
+
+#docker run --rm -v ./$DATA_DIR:/contdata taxi-rides-outlier-detection /contdata $DATE
