@@ -1,0 +1,16 @@
+# 1. Make your changes (edit files)
+# 2. Create and switch to the new branch:
+git checkout -b dev
+
+# 3. Add and commit
+git add .
+git commit -m "Refactor: improved DBSCAN config and CLI output"
+
+# 4. Push the new branch
+git push -u origin dev
+
+git checkout main
+
+git checkout dev
+
+git reset --hard origin/main
