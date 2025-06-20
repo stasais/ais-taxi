@@ -38,7 +38,6 @@ if we need from windows explorer access wsl folders we can use something like th
 
 
 
-
 #remove zone.identifier
 ##shell
 Get-ChildItem -Recurse . | ForEach-Object {
@@ -47,5 +46,16 @@ Get-ChildItem -Recurse . | ForEach-Object {
 
 ##wsl:
 find . -type f -name '*:Zone.Identifier' -exec rm -f {} \;
+
+
+#deploy k8s
+kubectl apply -f deploy/k8s/taxi-rides-outlier-detection-cronjob.yaml
+kubectl delete -f deploy/k8s/taxi-rides-outlier-detection-job.yaml
+kubectl get pods
+kubectl logs -f <POD NAME>
+
+
+
+
 
 
