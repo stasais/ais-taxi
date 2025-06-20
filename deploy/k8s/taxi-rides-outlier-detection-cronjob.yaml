@@ -11,7 +11,7 @@ spec:
         spec:
           containers:
           - name: taxi-rides-outlier-detection
-            image: ghcr.io/peterrietzler/taxi-rides-outlier-detection:1.0.1
+            image: taxi-rides-outlier-detection
             imagePullPolicy: IfNotPresent
             command: ["detect-taxi-ride-outliers", "/data"]
             volumeMounts:
@@ -20,6 +20,6 @@ spec:
           volumes:
           - name: local-folder
             hostPath:
-              path: /host_mnt/Users/peter.rietzler/Documents/private/dev2il/github/ais-dev2il-mlops-taxi-rides/work
-              type: Directory
+              path: /run/desktop/mnt/host/c/work
+              type: DirectoryOrCreate
           restartPolicy: Never

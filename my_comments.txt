@@ -14,3 +14,38 @@ git checkout main
 git checkout dev
 
 git reset --hard origin/main
+
+
+13.06
+
+./build-image.sh
+
+docker images
+
+docker run 
+
+docker run -v myvolume:/data
+
+docker run -v ./work:/contdata taxi-rides-outlier-detection /contdata 2025-01-01
+
+chmod +x build-image.sh
+
+
+#example paths
+path for host in cronjob.yaml   (with some extra prefix)  /run/desktop/mnt/host/c/work
+we can access from wsl folders in windows to get results or copy new input data via /mnt/c/work
+if we need from windows explorer access wsl folders we can use something like this: \\wsl.localhost\Ubuntu-24.04\home\.....
+
+
+
+
+#remove zone.identifier
+##shell
+Get-ChildItem -Recurse . | ForEach-Object {
+  Remove-Item -Path $_.FullName -Stream "Zone.Identifier" -ErrorAction SilentlyContinue
+}
+
+##wsl:
+find . -type f -name '*:Zone.Identifier' -exec rm -f {} \;
+
+
