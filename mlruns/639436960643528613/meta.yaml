@@ -1,0 +1,6 @@
+artifact_location: file:///home/stas24/ais-taxi/mlruns/639436960643528613
+creation_time: 1750966732001
+experiment_id: '639436960643528613'
+last_update_time: 1750966732001
+lifecycle_stage: active
+name: random-forest-classifier
