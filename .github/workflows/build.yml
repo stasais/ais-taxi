@@ -10,8 +10,8 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: peterrietzler/taxi-rides-outlier-detection
-  IMAGE_VERSION: 1.1.0
+  IMAGE_NAME: stasais/taxi-rides-outlier-detection
+  IMAGE_VERSION: 10.1.0
 
 jobs:
   test:
