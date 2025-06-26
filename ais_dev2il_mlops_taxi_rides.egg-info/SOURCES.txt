@@ -1,0 +1,12 @@
+pyproject.toml
+ais_dev2il_mlops_taxi_rides.egg-info/PKG-INFO
+ais_dev2il_mlops_taxi_rides.egg-info/SOURCES.txt
+ais_dev2il_mlops_taxi_rides.egg-info/dependency_links.txt
+ais_dev2il_mlops_taxi_rides.egg-info/entry_points.txt
+ais_dev2il_mlops_taxi_rides.egg-info/requires.txt
+ais_dev2il_mlops_taxi_rides.egg-info/top_level.txt
+taxi_rides_outlier_detection/__init__.py
+taxi_rides_outlier_detection/cli.py
+taxi_rides_outlier_detection/monitoring.py
+taxi_rides_outlier_detection/outlier_detector.py
+taxi_rides_outlier_detection/reference.taxi-rides.parquet

@@ -11,7 +11,7 @@ spec:
         spec:
           containers:
           - name: taxi-rides-data-drift-detection-cronjob
-            image: ghcr.io/peterrietzler/taxi-rides-outlier-detection:1.0.1
+            image: taxi-rides-outlier-detection:my_local
             imagePullPolicy: IfNotPresent
             command: ["detect-input-data-drift", "/data"]
             volumeMounts:

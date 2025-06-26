@@ -11,8 +11,8 @@ spec:
         spec:
           containers:
           - name: taxi-rides-outlier-detection
-            image: ghcr.io/peterrietzler/taxi-rides-outlier-detection:1.0.1
-            imagePullPolicy: IfNotPresent
+            image: taxi-rides-outlier-detection:my_local
+            imagePullPolicy: Never
             command: ["detect-taxi-ride-outliers", "/data"]
             volumeMounts:
             - name: local-folder

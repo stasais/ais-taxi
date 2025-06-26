@@ -51,9 +51,17 @@ find . -type f -name '*:Zone.Identifier' -exec rm -f {} \;
 #deploy k8s
 kubectl apply -f deploy/k8s/taxi-rides-outlier-detection-cronjob.yaml
 kubectl delete -f deploy/k8s/taxi-rides-outlier-detection-job.yaml
+
+kubectl apply -f deploy/airflow/airflow.yaml
+kubectl port-forward pods/airflow 8080:8080 -n default
+kubectl logs airflow | grep admin
+
+
+Simple auth manager | Password for user 'admin': AX9HYqCWyTKG6MMu
+
+
 kubectl get pods
 kubectl logs -f <POD NAME>
-
 
 
 

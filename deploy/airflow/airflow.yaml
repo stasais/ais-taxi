@@ -58,15 +58,15 @@ spec:
   volumes:
   - name: airflow-dags
     hostPath:
-      path: /host_mnt/Users/peter.rietzler/Documents/private/dev2il/github/ais-dev2il-mlops-taxi-rides/deploy/airflow
+      path:  /run/desktop/mnt/host/c/deploy/airflow
       type: Directory   
   - name: k8s-jobs
     hostPath:
-      path: /host_mnt/Users/peter.rietzler/Documents/private/dev2il/github/ais-dev2il-mlops-taxi-rides/deploy/k8s
+      path: /run/desktop/mnt/host/c/deploy/k8s
       type: Directory   
   - name: data-dir
     hostPath:
-      path: /host_mnt/Users/peter.rietzler/Documents/private/dev2il/github/ais-dev2il-mlops-taxi-rides/work
+      path:  /run/desktop/mnt/host/c/work
       type: Directory   
 ---
 apiVersion: v1
