@@ -1,3 +1,0 @@
-[console_scripts]
-detect-input-data-drift = taxi_rides_outlier_detection.cli:detect_input_data_drift
-detect-taxi-ride-outliers = taxi_rides_outlier_detection.cli:detect_outliers
