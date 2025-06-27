@@ -64,6 +64,22 @@ kubectl get pods
 kubectl logs -f <POD NAME>
 
 
+#4 
+
+train-random-forest-classifier data/labeled/taxi-rides.parquet random-forest-classifier
+
+train-random-forest-classifier-v2 data/labeled/taxi-rides.parquet random-forest-classifier-v2
+
+train-logistic-regression-classifier data/labeled/taxi-rides.parquet logistic-regression-classifier
+
+
+
+
+detect-taxi-ride-outliers-with-classifier random-forest-classifier work 2025-01-01
+
+
+
+
 
 
 

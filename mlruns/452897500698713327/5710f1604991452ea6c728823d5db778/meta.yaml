@@ -1,0 +1,15 @@
+artifact_uri: file:///home/stas24/ais-taxi/mlruns/452897500698713327/5710f1604991452ea6c728823d5db778/artifacts
+end_time: 1751017879619
+entry_point_name: ''
+experiment_id: '452897500698713327'
+lifecycle_stage: active
+run_id: 5710f1604991452ea6c728823d5db778
+run_name: charming-hog-74
+run_uuid: 5710f1604991452ea6c728823d5db778
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751017822526
+status: 3
+tags: []
+user_id: stas24
